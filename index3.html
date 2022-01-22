@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+        
+            body {
+                margin: 0px;
+            }
+
+            nav{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 450px;
+                height: 100%;
+                background-color: #1732ca;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+             
+
+            }
+
+            main{
+                margin-left: 450px;
+                padding: 10px;
+            }
+
+            main h1 {
+                padding-left: 80px;
+                padding-right: 80px;
+                font-family: 'Font Awesome 5 Free';
+                color: rgb(110, 110, 110);
+            }
+
+            main p {
+                padding-left: 80px;
+                padding-right: 80px;
+                font-family: 'Font Awesome 5 Free';
+                color: rgb(110, 110, 110);
+            }
+
+            main h2 {
+                padding-left: 80px;
+                padding-right: 80px;
+                font-family: 'Font Awesome 5 Free';
+                font-size: 22px;
+                font-weight:initial;
+                color: rgb(148, 134, 134);
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            nav button {
+                color: #07135c;
+                background-color: white;
+                font-size: 25px;
+                margin: 25px;
+                cursor: pointer;
+                border-radius: 50px;
+                border-width: 3px;
+                padding: 0px 50px;
+            }
+
+            nav button:hover {
+                background-color: beige;
+            }
+
+            h2 {
+               font-size: 40px;
+               color: rgb(43, 43, 43);
+            }
+
+            main div {
+                padding: 10px;
+                overflow: hidden;
+            }
+
+            main span {
+                vertical-align: top;
+                font-family: 'Font Awesome 5 Free';
+                color: rgb(110, 110, 110);
+                margin-top: 25px;
+                margin-right: 80px;
+                display: flex;
+                justify-content: right;
+                font-size: 22px;
+            }
+
+            main img {
+                margin-bottom: 25px;
+                margin-top: 25px;
+                float: left;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <nav>
+
+            <h2 style="margin-bottom: 200px;">Navigation bar</h2>
+            <button onclick="document.location='Home.html'" > <p>Home Page</p>
+            <button onclick="document.location='index1.html'" > <p>Project 1</p>
+            <button onclick="document.location='index2.html'" > <p>Project 2</p>
+
+        </nav>
+
+        <main>
+            <div style=" border-radius: 5px; border-bottom: solid 2px #e4e4e4; margin-bottom: px;" >
+                
+                <h1> 2nd Game Project </h1>
+                <h2> This is the second game that I am working on and it's still in very early development. The game is planned to be an open world single player adventure game. Some features however have had some progress made on them. </h2>
+                
+            </div>
+<!-- Stats -->
+            <div>
+
+                <img src="images/BarGUI.png" alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; " /> 
+                <span>This will be the player's stats during the game. They include hunger, thirst, health and oxygen. The oxygen bar only appears when the player is in water.</span>
+                
+            </div>
+
+            <div>
+
+                <img src="images/HealthStatus.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px;  "/> 
+                <span> These stats will go down over time or when conditions are met like using an item. Thirst and hunger will go down gradually over time and oxygen will go down fast under water. All stats have a limit that it can't go past and will reset to the maximum value if it goes past that limit. The bar will tween and move according to what the status value is to give the player a visual idea of their stats. </span>
+            
+            </div>
+
+            <div style=" border-radius: 5px; border-bottom: solid 2px #e4e4e4; margin-bottom: px;" >
+
+                <img src="images/healthSave.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px;  "/> 
+                <span> All of these stats are saved between game sessions so when a player leaves and then joins back their stats will have saved. </span>
+            
+            </div>
+
+<!-- Inv -->
+
+            <div>
+
+                <img src="images/InvGUI.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/> 
+                <span> This is the player's inventory in the game. The inventory can easily be opened and closed using the e button. Right now the player is only holding four donuts. The inventory displays the name of the item, an image of the item and how many items are in the players inventory. A player can easily drop an item by then pressing the image of the item.</span>
+
+            </div>
+
+            <div>
+
+                <img src="images/Invcode1.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/>
+                <span> Once an item is picked up then the code checks and finds the first empty slot or a slot with the same item. Then the item's name, image and number in the inventory is added into the inventory. If the player drops an item then the code checks the number of items after the item has been dropped. If there is still some items left the the number is just reduced by one. Otherwise the slot is reset back to its blank form.</span>
+
+            </div>
+
+            <div style=" border-radius: 5px; border-bottom: solid 2px #e4e4e4; margin-bottom: px;">
+
+                <img src="images/Invcode2.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/>
+
+            </div>
+            
+
+
+        </main>
+
+    </body>
+
+
+
+</html>

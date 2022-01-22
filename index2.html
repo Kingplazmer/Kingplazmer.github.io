@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+        
+            body {
+                margin: 0px;
+            }
+
+            nav{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 450px;
+                height: 100%;
+                background-color: #1732ca;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+             
+
+            }
+
+            main{
+                margin-left: 450px;
+                padding: 10px;
+            }
+
+            main h1 {
+                padding-left: 80px;
+                padding-right: 80px;
+                font-family: 'Font Awesome 5 Free';
+                color: rgb(110, 110, 110);
+            }
+
+            main p {
+                padding-left: 80px;
+                padding-right: 80px;
+                font-family: 'Font Awesome 5 Free';
+                color: rgb(110, 110, 110);
+            }
+
+            main h2 {
+                padding-left: 80px;
+                padding-right: 80px;
+                font-family: 'Font Awesome 5 Free';
+                font-size: 22px;
+                font-weight:initial;
+                color: rgb(148, 134, 134);
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            nav button {
+                color: #07135c;
+                background-color: white;
+                font-size: 25px;
+                margin: 25px;
+                cursor: pointer;
+                border-radius: 50px;
+                border-width: 3px;
+                padding: 0px 50px;
+            }
+
+            nav button:hover {
+                background-color: beige;
+            }
+
+            h2 {
+               font-size: 40px;
+               color: rgb(43, 43, 43);
+            }
+
+            main div {
+                padding: 10px;
+                overflow: hidden;
+            }
+
+            main span {
+                vertical-align: top;
+                font-family: 'Font Awesome 5 Free';
+                color: rgb(110, 110, 110);
+                margin-top: 25px;
+                margin-right: 80px;
+                display: flex;
+                justify-content: right;
+                font-size: 22px;
+            }
+
+            main img {
+                margin-bottom: 25px;
+                margin-top: 25px;
+                float: left;
+            }
+
+            main a {
+
+                padding-left: 80px;
+                padding-right: 80px;
+
+            }
+
+        </style>
+
+    </head>
+<!-- 
+
+    item duplicator/giver
+    vault
+    Monster in maze
+    well jump scare
+    car scripts
+
+ -->
+    <body>
+        <nav>
+
+            <h2 style="margin-bottom: 200px;">Navigation bar</h2>
+            <button onclick="document.location='Home.html'" > <p>Home Page</p>
+            <button onclick="document.location='index1.html'" > <p>Project 1</p>
+            <button onclick="document.location='index3.html'" > <p>Project 3</p>
+
+        </nav>
+
+        <main>
+            <div style="border-radius: 5px; border-bottom: solid 2px #e4e4e4; margin-bottom: px;" >
+                
+                <h1> The End is Never Forever </h1>
+                <h2> The End is Never Forever is a small game I started working on out of pure curiosty on how games are developed. After starting development on the game it turned out to be a lot of fun and good challenge of my coding skills. This game was made by using lua and the roblox studio program. The End is Never Forever is a horror open world game that is supposed to be completed in one run. It involves exploring a forest that you have mysteriously woken up in without any recollection on how you got there and trying to find a way out. </h2>
+                <a href="https://www.roblox.com/games/7759856476/THE-END-IS-NEVER-FOREVER" > The End is Never Forever Link </a>
+
+            </div>
+
+<!-- Spawner -->
+
+            <div style="border-radius: 5px; border-bottom: solid 2px #e4e4e4; margin-bottom: px;" >
+
+                <img src="images/SpawnerCode.png" alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; " /> 
+                <span>Throughout the game players can find item spawners that can give players multiple items. To do this, a copy of the item is made and then the copy is given to the player.</span>
+                
+            </div>
+
+<!-- Vault -->
+
+            <div>
+
+                <img src="images/Vault.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px;  "/> 
+                <span>When adventuring through the game, players will eventually come upon this vault which can only be accessed with a specific code. Players can enter numbers via the number pad and clear and enter their code.</span>
+            
+            </div>
+
+            <div style="border-radius: 5px; border-bottom: solid 2px #e4e4e4; margin-bottom: px;">
+
+                <img src="images/VaultCode.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/> 
+                <span>When a number has been inputted the screen for the vault shows that number. If the player chooses to press the clear code button then the previously entered code is wiped. When the enter button has been pressed then the code entered is checked. If the entered code is the same as the correct code then the door is opened. If the code is incorrect then the inputted code is cleared and a message saying incorrect code is displayed.</span>
+
+            </div>
+
+<!-- Maze -->
+
+            <div>
+
+                <img src="images/MazePath.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/>
+                <span> When adventuring through the game players will find a cave where there is a monster dwelling. The monster follows a set path and if the player gets too near to the monster then they will die.</span>
+
+            </div>
+
+            <div style=" border-radius: 5px; border-bottom: solid 2px #e4e4e4; margin-bottom: px;">
+
+                <img src="images/MazeCode.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/>
+                <span> Two points have been set, the starting point and the half way point through the circuit. Multplie checkpoints have been set between these points to make for a more accurate path. The shortest path to nearest checkpoint or point is calculated and then the monster takes that path. Then the path to the next point is calculated and the monster continues on the path following the circuit. </span>
+
+            </div>
+
+<!-- Jumpscare -->
+
+            <div>
+
+                <img src="images/Well.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/>
+                <span> Early on in the game players might stumble upon a well. Once the player gets near they will be jumpscared by a monster popping out of the well.</span>
+
+            </div>
+
+            <div style=" border-radius: 5px; border-bottom: solid 2px #e4e4e4; margin-bottom: px;">
+
+                <img src="images/WellCode.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/>
+                <span> Once the player enters a certain region near the well then a CFrame will activate moving the monster into the well and a sound plays with it jumpscaring the player. After this another Cframe is activated and the monster moves back under the map. During this time a debounce is active to stop the player from activating this sequence multiple times. </span>
+
+            </div>
+            
+<!-- Car -->
+
+            <div>
+
+                <img src="images/Car.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/>
+                <span> While exploring through the game the player will find a gas station and next to it a broken down car. Players will soon realise that this car is their key to escaping. </span>
+
+            </div>
+
+            <div>
+
+                <img src="images/CarCode1.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/>
+                <span> Multiple items need to be used on the car to repair it and allow for the players to escape. There is also a gate that needs to opened to allow the player to escape using the car. To open the gate the player will need to activate a number of generators.</span>
+
+            </div>
+
+            <div style=" border-radius: 5px; border-bottom: solid 2px #e4e4e4; margin-bottom: px;">
+
+                <img src="images/CarCode2.png"  alt="" style="height: 225pt; width: 350pt; margin-left: 80px; margin-right: 80px; "/>
+                <span>If an item has been used on the car or a generator has been activated then their values turns to true. Once all item and generator values are true then the player is given the option to use the car and escape the forest.  </span>
+
+            </div>
+
+        </main>
+
+    </body>
+
+
+
+</html>
